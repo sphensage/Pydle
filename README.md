@@ -13,6 +13,11 @@ L = Correct<br>
 
 And that's it! I will be planning to add more features if I'm not too lazy .-.<br>
 
+## How to run
+1. Download file in the releases tab.
+2. Run Pydl.py via python (Requires Python 3.1X)
+3. A command terminal will pop-up and that's where you start the game.
+
 ## Future updates
 1. User interface
 2. Executable
