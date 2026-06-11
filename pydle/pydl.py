@@ -13,9 +13,8 @@ def pick_word() -> str:
 
 def check_guess(wotd=str, guess=str) -> list:
     result = []
-    
+    lt_wotd = list(wotd)
     for a, b in enumerate(guess, start=0):
-        lt_wotd = list(wotd)
         has_looped = False
         start = True
         found = False
@@ -78,6 +77,7 @@ def init():
         if e > 5:
             choice = input(f"You failed! The word was {wotd}\nTry again? [Y] [N]").upper().strip()
             if choice == "Y":
+                wotd = pick_word().upper().strip()
                 history = []
                 e = 0
             else: break
@@ -115,6 +115,7 @@ def init():
 
                     choice = input("Try again? [Y] [N]").upper().strip()
                     if choice == "Y":
+                        wotd = pick_word().upper().strip()
                         history = []
                         e = 0
                     else: break
