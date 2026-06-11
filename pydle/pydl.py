@@ -13,8 +13,9 @@ def pick_word() -> str:
 
 def check_guess(wotd=str, guess=str) -> list:
     result = []
-    lt_wotd = list(wotd)
+    
     for a, b in enumerate(guess, start=0):
+        lt_wotd = list(wotd)
         has_looped = False
         start = True
         found = False
